@@ -1,6 +1,9 @@
 # Arduino-Automatic-Plant-Watering-System
-Arduino Plant watering System for four Plants (added some optimisations and LCD display)
-
+Arduino Plant watering System for four Plants 
+  added some optimisations
+  added LCD display
+  Display based on % not absolute values from sensor
+  3d printed Box and assessories
 
 # ToDo
 
