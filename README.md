@@ -2,15 +2,15 @@
 Arduino Plant watering System for four Plants (added some optimisations and LCD display)
 
 
-#ToDo
+# ToDo
 
-##Code:
+## Code:
   - remove position after decimal point for % in LCD
   - Add Sensor calibration function (https://github.com/Trickery710/Automatic-Plant-Watering-System-Tutorial/blob/c8e3205a77603acb73d5489f55570fc86c736b9b/examples/01_calibration/main.cpp)
   - Optimize code as used by https://github.com/TheRealBeowulf/Automatic-Plant-Watering-System-Tutorial/blob/c63c6c0f5720cf6e074827d02cda44a5c78929a0/4%20Channel%20Relay%20Plant%20Watering%20System%20and%20code/arduino_Watering4/arduino_Watering4.ino)
   - 
  
-##HW:
+## HW:
 - create drawing for cabling
 - add 3d printer designs
 - Add pictures
