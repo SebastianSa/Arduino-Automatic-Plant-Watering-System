@@ -16,6 +16,10 @@ gießwert_ entsprechend anpassen
 gegossen wird pro Durchlauf für 2 Sec. pro pumpe/Pflanze
 
 Changelog:
+
+  Version 0.23 
+    09.05.2023        + Channels can be disabled when "giesswert is set to 0" -> Applied to all channels
+
   Version 0.22
     09.05.2023        + Channels can be disabled when "giesswert is set to 0"
   
@@ -27,13 +31,14 @@ Changelog:
     26.04.2023 20:23  + added 4th watering loop
 */
 
+
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 4);
 //in “20, 4” ändern wenn 20x04 benutzt wird
 
-char version[] = "0.22";
+char version[] = "0.23";
 char UpDate[] = "09.05.2023";
 
 //Default Values wet: 250; dry: 610 
@@ -138,9 +143,9 @@ void loop() {
   
 //Serial.println(feuchtewert);
 
+  //// PLANT 1 /////////////////////////////
 if (giesswert1>0) //just executed if not 0 (0 is used to disable channel)
 { 
-  //// PLANT 1 /////////////////////////////
     Serial.print("MOISTURE LEVEL 1:  ");
     value1 = analogRead(Pin1);
     Serial.print(value1);
@@ -168,10 +173,13 @@ if (giesswert1>0) //just executed if not 0 (0 is used to disable channel)
       digitalWrite(IN1, HIGH);
       }
   }  
+else{
+      lcd.setCursor(0, 0);lcd.print("channel disabled    ");
+}
 
+////PLANT 2 /////////////////////////////
 if (giesswert2>0) //just executed if not 0 (0 is used to disable channel)
 { 
-////PLANT 2 /////////////////////////////
   Serial.print("MOISTURE LEVEL 2:  ");
   value2 = analogRead(Pin2);
   Serial.print(value2);
@@ -199,10 +207,13 @@ if (giesswert2>0) //just executed if not 0 (0 is used to disable channel)
     digitalWrite(IN2, HIGH);
     }
 }
+else{
+      lcd.setCursor(0, 1);lcd.print("channel disabled    ");
+}
 
+////PLANT 3 /////////////////////////////
 if (giesswert3>0) //just executed if not 0 (0 is used to disable channel)
 {
-////PLANT 3 /////////////////////////////
   Serial.print("MOISTURE LEVEL 3:  ");
   value3 = analogRead(Pin3);
   Serial.print(value3);
@@ -230,11 +241,13 @@ if (giesswert3>0) //just executed if not 0 (0 is used to disable channel)
     digitalWrite(IN3, HIGH);
     }
 }
+else{
+      lcd.setCursor(0, 2);lcd.print("channel disabled    ");
+}
 
-
+////PLANT 4 /////////////////////////////
 if (giesswert4>0) //just executed if not 0 (0 is used to disable channel)
 { 
-////PLANT 4 /////////////////////////////
 Serial.print("MOISTURE LEVEL 4:  ");
   value4 = analogRead(Pin4);
   Serial.print(value4);
