@@ -17,3 +17,15 @@ Arduino Plant watering System for four Plants
 
 I have changed the process how plants are watered if humidity is to low.
 Instead of switching the pump on until configured humidity is reached I'm switching it on for 2 seconds, wait for a few seconds and switch it on again, to give the water a chance to drain into soil.
+
+# Pictures
+## Prototype with 3dPrinted parts
+
+Prototype with Watertank
+![Protype with Watertank](https://github.com/SebastianSa/Arduino-Automatic-Plant-Watering-System/blob/f1e2738a31b8f112fcfcc49f49099789c70dabdf/pictures/PXL_20230504_083422437.jpg)
+
+Inside view of the 3d printed box to cover Arduino Uno and Relay Module
+![Protype with Watertank](https://github.com/SebastianSa/Arduino-Automatic-Plant-Watering-System/blob/f1e2738a31b8f112fcfcc49f49099789c70dabdf/pictures/PXL_20230504_083448540.jpg)
+
+Sensor and watering pipe holder with sprinkler
+![Protype with Watertank](https://github.com/SebastianSa/Arduino-Automatic-Plant-Watering-System/blob/f1e2738a31b8f112fcfcc49f49099789c70dabdf/pictures/PXL_20230504_083549173.jpg)
