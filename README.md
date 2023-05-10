@@ -7,10 +7,10 @@ Arduino Plant watering System for four Plants
 
 ## LCD display Design (4*20)
 
-  Plant1:    xx % 50 %
-  Plant2:    xx % 50 %
-  Plant3:    xx % 80 %
-  channel disabled
+  Plant1:    xx % 50 %   
+  Plant2:    xx % 50 %   
+  Plant3:    xx % 80 %   
+  channel disabled   
 
 
 # ToDo
