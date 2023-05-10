@@ -37,3 +37,17 @@ Inside view of the 3d printed box to cover Arduino Uno and Relay Module
 
 Sensor and watering pipe holder with sprinkler
 ![Protype with Watertank](https://github.com/SebastianSa/Arduino-Automatic-Plant-Watering-System/blob/f1e2738a31b8f112fcfcc49f49099789c70dabdf/pictures/PXL_20230504_083549173.jpg)
+
+# Material
+
+Basic Plant Watering Set
+https://www.amazon.de/gp/product/B087DWHL82/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&psc=1
+
+Twist Servo Cable
+https://www.amazon.de/gp/product/B07D35YXSN/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1
+
+heat shrink tube
+https://www.amazon.de/gp/product/B0778D22WM/ref=ppx_yo_dt_b_asin_title_o07_s01?ie=UTF8&psc=1
+
+multi-pin connector
+https://www.amazon.de/dp/B07DBY753C?psc=1&ref=ppx_yo2ov_dt_b_product_details
